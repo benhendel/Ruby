@@ -1,0 +1,23 @@
+num = 1
+puts "Welcome to FizzBuzz. We will begin the game with the number 1."
+print "With which number shall we end: "
+last_num = gets.chomp.to_i
+if last_num <= 0
+    puts "I'm sorry, but that would break my code."
+else
+until num > last_num
+if (((num % 3) == 0) && ((num % 5) != 0)) == true
+	print "fizz "
+	num += 1
+elsif (((num % 3) != 0) && ((num % 5) == 0)) == true
+	print "buzz "
+	num +=1
+elsif (((num % 3) == 0) && ((num % 5) == 0)) == true
+	print "fizzbuzz "
+	num += 1
+else 
+    print "#{num} "
+    num += 1
+end
+end
+end
